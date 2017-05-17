@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="animated slideInLeft">
+
+
+
+   <div id="slideMenu">
+      <h2><a href="#">home</a></h2>
+      <h2><a href="#">services</a></h2>
+      <h2><a href="#">about</a></h2>
+      <h2><a href="#">contact</a></h2>
+   </div>
+
+   <header>
+   <div id="roundBtn"><i class="fa fa-superpowers" aria-hidden="true"></i></div>
+   <div class="jumbotron">
+      <div class="container">
+         <h1 class="head">Hello.</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit labore doloremque nam alias deserunt, provident, ipsa facilis eum, dolores sit eligendi eaque delectus distinctio totam consequuntur. Deleniti, quae omnis!</p>
+      </div>
+   </div>
+
+   </header>
+
+   <section id="header">
+
+      <div class="row">
+         <div class="container">
+            <div class="col-md-4">
+               <h3>col 1</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi consequatur veniam maiores pariatur eos nostrum, ad explicabo, eius delectus aliquid eaque natus quo, dolores rem dolorum asperiores qui nesciunt!</p>
+            </div>
+            <div class="col-md-4">
+               <h3>col 1</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, aperiam facere quibusdam laudantium fugit inventore et aliquid deserunt. Vitae perspiciatis nulla impedit voluptatum modi omnis maiores fugiat officia explicabo sit.</p>
+            </div>
+            <div class="col-md-4">
+               <h3>col 1</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laboriosam vero eligendi autem nobis ab nihil laudantium voluptatem? Ad obcaecati, adipisci sapiente vel quibusdam, itaque doloremque. Quia, eaque. Tempora, itaque.</p>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <section id="services">
+
+   </section>
+
+
+
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.min.js"
+     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+     crossorigin="anonymous"></script>
+<script>
+
+
+   var roundBtn = document.querySelector('#roundBtn');
+   var slideMenu = document.querySelector('#slideMenu');
+
+   roundBtn.addEventListener("click", showMenu, false);
+   slideMenu.addEventListener("click", hideMenu, false);
+
+   function showMenu(e) {
+      slideMenu.classList.add("show");
+
+      document.body.style.overflow = "hidden";
+   }
+   function hideMenu(e) {
+      slideMenu.classList.remove("show");
+      e.stopPropagation();
+
+      document.body.style.overflow = "auto";
+
+   }
+
+</script>
+
+</body>
+</html>
